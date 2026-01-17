@@ -1,0 +1,180 @@
+<!doctype html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Articles</title>
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="js/script.js"></script>
+  </head>
+
+  <body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-200 font-sans min-h-screen flex flex-col transition-colors duration-300 relative">
+    <div class="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
+      <div class="absolute top-[10%] left-[5%] w-[500px] h-[500px] bg-indigo-300/20 dark:bg-indigo-900/10 rounded-full blur-[100px] mix-blend-multiply dark:mix-blend-normal opacity-70"></div>
+      <div class="absolute bottom-[10%] right-[5%] w-[500px] h-[500px] bg-teal-300/20 dark:bg-teal-900/10 rounded-full blur-[100px] mix-blend-multiply dark:mix-blend-normal opacity-70"></div>
+    </div>
+
+    <header class="sticky top-0 z-50 w-full backdrop-blur-md bg-white/70 dark:bg-slate-900/60 border-b border-slate-200/50 dark:border-slate-800/50 transition-all duration-300">
+      <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 bg-indigo-600 dark:bg-indigo-500 rounded-xl flex items-center justify-center shadow-lg shadow-indigo-500/20">
+            <span class="material-symbols-outlined text-white">code</span>
+          </div>
+          <h1 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">John Doe</h1>
+        </div>
+        <div class="flex items-center gap-6">
+          <nav class="hidden md:block">
+            <ul class="flex gap-8 text-sm font-medium text-slate-600 dark:text-slate-300">
+              <li>
+                <a class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" href="index.html">Home</a>
+              </li>
+              <li>
+                <a class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" href="projects.html">Projects</a>
+              </li>
+              <li>
+                <a class="text-indigo-600 dark:text-indigo-400 font-semibold relative after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-0.5 after:bg-indigo-600 dark:after:bg-indigo-400 after:rounded-full" href="articles.html">Articles</a>
+              </li>
+              <li>
+                <a class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <button aria-label="Toggle Dark Mode" class="group p-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500" onclick="toggleTheme()">
+            <span class="material-symbols-outlined block dark:hidden group-hover:text-orange-500 transition-colors">light_mode</span>
+            <span class="material-symbols-outlined hidden dark:block group-hover:text-yellow-400 transition-colors">dark_mode</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="flex-grow w-full max-w-4xl mx-auto px-6 py-12">
+      <header class="py-12 mb-8 text-center md:text-left">
+        <h2 class="text-4xl md:text-6xl font-bold mb-6 text-slate-900 dark:text-white tracking-tight">Writing</h2>
+        <p class="text-slate-500 dark:text-slate-400 text-lg md:text-xl font-light max-w-2xl leading-relaxed">Thoughts on software engineering, design patterns, and building better web experiences.</p>
+      </header>
+
+      <div class="space-y-6">
+        <article
+          class="group relative flex flex-col md:flex-row gap-8 p-8 bg-white/40 dark:bg-slate-900/40 backdrop-blur-md rounded-2xl border border-white/40 dark:border-slate-800/50 shadow-sm ring-1 ring-slate-900/5 dark:ring-slate-700/30 hover:shadow-lg hover:bg-white/60 dark:hover:bg-slate-900/60 transition-all duration-300">
+          <div class="flex-shrink-0 md:w-48 flex flex-col items-start pt-1">
+            <span class="text-xs font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 mb-2">Engineering</span>
+            <time class="text-sm text-slate-500 dark:text-slate-400" datetime="2024-03-15">March 15, 2024</time>
+          </div>
+          <div class="flex-grow">
+            <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">The Future of Frontend Architecture</h3>
+            <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-4">Exploring the shift towards server components, edge rendering, and how it impacts the way we build modern web applications today. We look at the trade-offs between hydration and islands architecture.</p>
+            <div class="flex items-center gap-4">
+              <a class="inline-flex items-center text-sm font-semibold text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300" href="#">
+                Read Article
+                <span class="material-symbols-outlined text-[16px] ml-1 transition-transform group-hover:translate-x-1">arrow_forward</span>
+              </a>
+              <span class="text-xs text-slate-400 flex items-center gap-1">
+                <span class="material-symbols-outlined text-[14px]">schedule</span>
+                5 min read
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article
+          class="group relative flex flex-col md:flex-row gap-8 p-8 bg-white/40 dark:bg-slate-900/40 backdrop-blur-md rounded-2xl border border-white/40 dark:border-slate-800/50 shadow-sm ring-1 ring-slate-900/5 dark:ring-slate-700/30 hover:shadow-lg hover:bg-white/60 dark:hover:bg-slate-900/60 transition-all duration-300">
+          <div class="flex-shrink-0 md:w-48 flex flex-col items-start pt-1">
+            <span class="text-xs font-bold uppercase tracking-wider text-teal-600 dark:text-teal-400 mb-2">CSS</span>
+            <time class="text-sm text-slate-500 dark:text-slate-400" datetime="2024-02-28">Feb 28, 2024</time>
+          </div>
+          <div class="flex-grow">
+            <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">Mastering Tailwind CSS v4</h3>
+            <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-4">A deep dive into the new engine, dynamic values, and how to structure your projects for maximum maintainability.</p>
+            <div class="flex items-center gap-4">
+              <a class="inline-flex items-center text-sm font-semibold text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300" href="#">
+                Read Article
+                <span class="material-symbols-outlined text-[16px] ml-1 transition-transform group-hover:translate-x-1">arrow_forward</span>
+              </a>
+              <span class="text-xs text-slate-400 flex items-center gap-1">
+                <span class="material-symbols-outlined text-[14px]">schedule</span>
+                8 min read
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article
+          class="group relative flex flex-col md:flex-row gap-8 p-8 bg-white/40 dark:bg-slate-900/40 backdrop-blur-md rounded-2xl border border-white/40 dark:border-slate-800/50 shadow-sm ring-1 ring-slate-900/5 dark:ring-slate-700/30 hover:shadow-lg hover:bg-white/60 dark:hover:bg-slate-900/60 transition-all duration-300">
+          <div class="flex-shrink-0 md:w-48 flex flex-col items-start pt-1">
+            <span class="text-xs font-bold uppercase tracking-wider text-orange-600 dark:text-orange-400 mb-2">Career</span>
+            <time class="text-sm text-slate-500 dark:text-slate-400" datetime="2024-01-10">Jan 10, 2024</time>
+          </div>
+          <div class="flex-grow">
+            <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">From Junior to Senior Developer</h3>
+            <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-4">Lessons learned over 5 years of professional software development. Soft skills, technical depth, and mentorship.</p>
+            <div class="flex items-center gap-4">
+              <a class="inline-flex items-center text-sm font-semibold text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300" href="#">
+                Read Article
+                <span class="material-symbols-outlined text-[16px] ml-1 transition-transform group-hover:translate-x-1">arrow_forward</span>
+              </a>
+              <span class="text-xs text-slate-400 flex items-center gap-1">
+                <span class="material-symbols-outlined text-[14px]">schedule</span>
+                6 min read
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article
+          class="group relative flex flex-col md:flex-row gap-8 p-8 bg-white/40 dark:bg-slate-900/40 backdrop-blur-md rounded-2xl border border-white/40 dark:border-slate-800/50 shadow-sm ring-1 ring-slate-900/5 dark:ring-slate-700/30 hover:shadow-lg hover:bg-white/60 dark:hover:bg-slate-900/60 transition-all duration-300">
+          <div class="flex-shrink-0 md:w-48 flex flex-col items-start pt-1">
+            <span class="text-xs font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 mb-2">Design</span>
+            <time class="text-sm text-slate-500 dark:text-slate-400" datetime="2023-11-22">Nov 22, 2023</time>
+          </div>
+          <div class="flex-grow">
+            <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">Why Glassmorphism is Still Relevant</h3>
+            <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-4">Understanding the visual hierarchy and aesthetic appeal of frosted glass effects in modern UI design systems.</p>
+            <div class="flex items-center gap-4">
+              <a class="inline-flex items-center text-sm font-semibold text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300" href="#">
+                Read Article
+                <span class="material-symbols-outlined text-[16px] ml-1 transition-transform group-hover:translate-x-1">arrow_forward</span>
+              </a>
+              <span class="text-xs text-slate-400 flex items-center gap-1">
+                <span class="material-symbols-outlined text-[14px]">schedule</span>
+                4 min read
+              </span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="mt-16 flex justify-center">
+        <nav aria-label="Pagination" class="inline-flex rounded-md shadow-sm isolate -space-x-px">
+          <a class="relative inline-flex items-center rounded-l-md px-2 py-2 text-slate-400 ring-1 ring-inset ring-slate-300 dark:ring-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 focus:z-20 focus:outline-offset-0" href="#">
+            <span class="sr-only">Previous</span>
+            <span class="material-symbols-outlined text-sm">chevron_left</span>
+          </a>
+          <a class="relative z-10 inline-flex items-center bg-indigo-600 px-4 py-2 text-sm font-semibold text-white focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" href="#">1</a>
+          <a class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-slate-900 dark:text-slate-300 ring-1 ring-inset ring-slate-300 dark:ring-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 focus:z-20 focus:outline-offset-0" href="#">2</a>
+          <a class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-slate-900 dark:text-slate-300 ring-1 ring-inset ring-slate-300 dark:ring-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 focus:z-20 focus:outline-offset-0" href="#">3</a>
+          <a class="relative inline-flex items-center rounded-r-md px-2 py-2 text-slate-400 ring-1 ring-inset ring-slate-300 dark:ring-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 focus:z-20 focus:outline-offset-0" href="#">
+            <span class="sr-only">Next</span>
+            <span class="material-symbols-outlined text-sm">chevron_right</span>
+          </a>
+        </nav>
+      </div>
+    </main>
+
+    <footer class="w-full max-w-7xl mx-auto p-8 text-center border-t border-slate-200 dark:border-slate-800 mt-auto backdrop-blur-sm">
+      <p class="text-slate-500 dark:text-slate-400 text-sm">
+        &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        Made with ❤️ by Rifky Nurfaishal - Basic Html Website
+      </p>
+    </footer>
+  </body>
+</html>

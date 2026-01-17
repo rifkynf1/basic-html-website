@@ -1,0 +1,160 @@
+<!doctype html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>My Projects</title>
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="js/script.js"></script>
+  </head>
+
+  <body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-200 font-sans min-h-screen flex flex-col transition-colors duration-300 relative selection:bg-indigo-500/30">
+    <div class="fixed top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
+      <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-indigo-200/20 dark:bg-indigo-900/10 rounded-full blur-[100px]"></div>
+      <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-blue-200/20 dark:bg-blue-900/10 rounded-full blur-[100px]"></div>
+    </div>
+
+    <header class="sticky top-0 z-50 w-full backdrop-blur-md bg-white/60 dark:bg-slate-900/60 border-b border-white/20 dark:border-white/5 transition-all duration-300">
+      <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 bg-indigo-600 dark:bg-indigo-500 rounded-xl flex items-center justify-center shadow-lg shadow-indigo-500/20">
+            <span class="material-symbols-outlined text-white">code</span>
+          </div>
+          <h1 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">John Doe</h1>
+        </div>
+        <div class="flex items-center gap-6">
+          <nav class="hidden md:block">
+            <ul class="flex gap-8 text-sm font-medium text-slate-600 dark:text-slate-300">
+              <li>
+                <a class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" href="index.html">Home</a>
+              </li>
+              <li>
+                <a class="text-indigo-600 dark:text-indigo-400 font-semibold" href="projects.html">Projects</a>
+              </li>
+              <li>
+                <a class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" href="articles.html">Articles</a>
+              </li>
+              <li>
+                <a class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <button aria-label="Toggle Dark Mode" class="group p-2 rounded-full bg-slate-100/50 dark:bg-slate-800/50 text-slate-500 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500" onclick="toggleTheme()">
+            <span class="material-symbols-outlined block dark:hidden group-hover:text-orange-500 transition-colors">light_mode</span>
+            <span class="material-symbols-outlined hidden dark:block group-hover:text-yellow-400 transition-colors">dark_mode</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="flex-grow w-full max-w-7xl mx-auto px-6 py-12">
+      <section class="text-center py-16 mb-8">
+        <h2 class="text-5xl md:text-6xl font-bold mb-6 text-slate-900 dark:text-white tracking-tight">Recent Projects</h2>
+        <p class="text-slate-500 dark:text-slate-400 text-xl font-light max-w-2xl mx-auto">A collection of web applications and experiments focusing on modern UI design and clean architecture.</p>
+      </section>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <article class="group relative flex flex-col justify-between h-full bg-white/40 dark:bg-slate-800/30 backdrop-blur-xl rounded-3xl p-8 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+          <div>
+            <div class="w-12 h-12 mb-6 rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center shadow-lg shadow-indigo-500/20 text-white">
+              <span class="material-symbols-outlined">web</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">HTML Only Portfolio</h3>
+            <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">A clean, semantic HTML5 portfolio website built without any JavaScript dependencies. Focuses on accessibility, SEO, and raw performance metrics.</p>
+          </div>
+          <a class="inline-flex items-center text-indigo-600 dark:text-indigo-400 text-sm font-semibold group-hover:gap-2 transition-all duration-300" href="#">
+            View Project
+            <span class="material-symbols-outlined text-[16px] ml-1">arrow_forward</span>
+          </a>
+        </article>
+
+        <article class="group relative flex flex-col justify-between h-full bg-white/40 dark:bg-slate-800/30 backdrop-blur-xl rounded-3xl p-8 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+          <div>
+            <div class="w-12 h-12 mb-6 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center shadow-lg shadow-blue-500/20 text-white">
+              <span class="material-symbols-outlined">calculate</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">React Calculator</h3>
+            <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">A fully functional scientific calculator with history features. Implemented using React hooks and Context API for global state management.</p>
+          </div>
+          <a class="inline-flex items-center text-indigo-600 dark:text-indigo-400 text-sm font-semibold group-hover:gap-2 transition-all duration-300" href="#">
+            View Project
+            <span class="material-symbols-outlined text-[16px] ml-1">arrow_forward</span>
+          </a>
+        </article>
+
+        <article class="group relative flex flex-col justify-between h-full bg-white/40 dark:bg-slate-800/30 backdrop-blur-xl rounded-3xl p-8 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+          <div>
+            <div class="w-12 h-12 mb-6 rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-500 flex items-center justify-center shadow-lg shadow-emerald-500/20 text-white">
+              <span class="material-symbols-outlined">quiz</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Quiz Application</h3>
+            <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">Interactive quiz platform with timed questions, score tracking, and category selection. Uses local storage to persist user progress.</p>
+          </div>
+          <a class="inline-flex items-center text-indigo-600 dark:text-indigo-400 text-sm font-semibold group-hover:gap-2 transition-all duration-300" href="#">
+            View Project
+            <span class="material-symbols-outlined text-[16px] ml-1">arrow_forward</span>
+          </a>
+        </article>
+
+        <article class="group relative flex flex-col justify-between h-full bg-white/40 dark:bg-slate-800/30 backdrop-blur-xl rounded-3xl p-8 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+          <div>
+            <div class="w-12 h-12 mb-6 rounded-2xl bg-gradient-to-br from-orange-500 to-amber-500 flex items-center justify-center shadow-lg shadow-orange-500/20 text-white">
+              <span class="material-symbols-outlined">timer</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Countdown Timer</h3>
+            <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">Customizable countdown timer for events. Features visual progress circles and notification sounds upon completion.</p>
+          </div>
+          <a class="inline-flex items-center text-indigo-600 dark:text-indigo-400 text-sm font-semibold group-hover:gap-2 transition-all duration-300" href="#">
+            View Project
+            <span class="material-symbols-outlined text-[16px] ml-1">arrow_forward</span>
+          </a>
+        </article>
+
+        <article class="group relative flex flex-col justify-between h-full bg-white/40 dark:bg-slate-800/30 backdrop-blur-xl rounded-3xl p-8 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+          <div>
+            <div class="w-12 h-12 mb-6 rounded-2xl bg-gradient-to-br from-pink-500 to-rose-500 flex items-center justify-center shadow-lg shadow-pink-500/20 text-white">
+              <span class="material-symbols-outlined">shopping_bag</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">E-commerce Product</h3>
+            <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">A responsive product landing page featuring image galleries, cart functionality simulation, and sticky add-to-cart actions.</p>
+          </div>
+          <a class="inline-flex items-center text-indigo-600 dark:text-indigo-400 text-sm font-semibold group-hover:gap-2 transition-all duration-300" href="#">
+            View Project
+            <span class="material-symbols-outlined text-[16px] ml-1">arrow_forward</span>
+          </a>
+        </article>
+
+        <article class="group relative flex flex-col justify-between h-full bg-white/40 dark:bg-slate-800/30 backdrop-blur-xl rounded-3xl p-8 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+          <div>
+            <div class="w-12 h-12 mb-6 rounded-2xl bg-gradient-to-br from-violet-500 to-fuchsia-500 flex items-center justify-center shadow-lg shadow-violet-500/20 text-white">
+              <span class="material-symbols-outlined">dashboard</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Analytics Dashboard</h3>
+            <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">Mockup of an analytics dashboard with chart integrations, data tables, and sidebar navigation using grid layout.</p>
+          </div>
+          <a class="inline-flex items-center text-indigo-600 dark:text-indigo-400 text-sm font-semibold group-hover:gap-2 transition-all duration-300" href="#">
+            View Project
+            <span class="material-symbols-outlined text-[16px] ml-1">arrow_forward</span>
+          </a>
+        </article>
+      </div>
+    </main>
+
+    <footer class="w-full max-w-7xl mx-auto p-8 text-center border-t border-slate-200/50 dark:border-slate-800/50">
+      <p class="text-slate-500 dark:text-slate-400 text-sm">
+        &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        Made with ❤️ by Rifky Nurfaishal - Basic Html Website
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,188 @@
+<!doctype html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>My Portfolio</title>
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="js/script.js"></script>
+  </head>
+
+  <body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-200 font-sans min-h-screen flex flex-col transition-colors duration-300">
+    <header class="sticky top-0 z-50 w-full backdrop-blur-md bg-white/30 dark:bg-slate-900/40 border-b border-white/20 dark:border-slate-800/20 transition-all duration-300">
+      <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 bg-indigo-600 dark:bg-indigo-500 rounded-xl flex items-center justify-center shadow-lg shadow-indigo-500/20">
+            <span class="material-symbols-outlined text-white">code</span>
+          </div>
+          <h1 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">John Doe</h1>
+        </div>
+        <div class="flex items-center gap-6">
+          <nav class="hidden md:block">
+            <ul class="flex gap-8 text-sm font-medium text-slate-600 dark:text-slate-300">
+              <li>
+                <a class="text-indigo-600 dark:text-indigo-400 font-semibold" href="index.html">Home</a>
+              </li>
+              <li>
+                <a class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" href="projects.html">Projects</a>
+              </li>
+              <li>
+                <a class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" href="articles.html">Articles</a>
+              </li>
+              <li>
+                <a class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <button
+            aria-label="Toggle Dark Mode"
+            class="group p-2 rounded-full bg-white/40 dark:bg-slate-800/40 border border-white/20 dark:border-slate-700/30 text-slate-500 dark:text-slate-400 hover:bg-white/60 dark:hover:bg-slate-700/60 transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            onclick="toggleTheme()">
+            <span class="material-symbols-outlined block dark:hidden group-hover:text-orange-500 transition-colors">light_mode</span>
+            <span class="material-symbols-outlined hidden dark:block group-hover:text-yellow-400 transition-colors">dark_mode</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="flex-grow w-full max-w-7xl mx-auto px-6 py-12 relative">
+      <div class="fixed top-20 left-10 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob dark:bg-purple-900 dark:opacity-10 -z-10"></div>
+      <div class="fixed top-20 right-10 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-2000 dark:bg-yellow-900 dark:opacity-10 -z-10"></div>
+      <div class="fixed -bottom-8 left-20 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000 dark:bg-pink-900 dark:opacity-10 -z-10"></div>
+
+      <section class="text-center py-16 mb-12">
+        <h2 class="text-5xl md:text-7xl font-bold mb-6 text-slate-900 dark:text-white tracking-tight">Frontend Developer</h2>
+        <p class="text-slate-500 dark:text-slate-400 text-xl font-light max-w-2xl mx-auto">Clean code, semantic structure, and modern user experiences styled with Tailwind CSS.</p>
+      </section>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <aside class="col-span-1 lg:col-span-3">
+          <div class="bg-white/30 dark:bg-slate-900/40 backdrop-blur-md rounded-2xl p-6 shadow-[0_8px_32px_0_rgba(31,38,135,0.07)] border border-white/20 dark:border-slate-700/30 h-full hover:shadow-lg transition-all duration-300">
+            <div class="flex items-center gap-2 mb-6 text-slate-900 dark:text-white">
+              <span class="material-symbols-outlined text-indigo-500">folder</span>
+              <h3 class="text-lg font-bold">Projects</h3>
+            </div>
+            <ul class="space-y-1">
+              <li>
+                <a class="flex items-center justify-between py-2 px-3 rounded-lg text-sm text-slate-600 dark:text-slate-300 hover:bg-white/40 dark:hover:bg-slate-800/40 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors group" href="#">
+                  HTML Only Portfolio
+                  <span class="material-symbols-outlined text-[16px] opacity-0 group-hover:opacity-100 transition-opacity">arrow_outward</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+
+        <section class="col-span-1 lg:col-span-5">
+          <div class="bg-white/30 dark:bg-slate-900/40 backdrop-blur-md rounded-2xl p-8 shadow-[0_8px_32px_0_rgba(31,38,135,0.07)] border border-white/20 dark:border-slate-700/30 h-full hover:shadow-lg transition-all duration-300">
+            <div class="flex items-center gap-2 mb-8 text-slate-900 dark:text-white">
+              <span class="material-symbols-outlined text-teal-500">work_history</span>
+              <h3 class="text-lg font-bold">Work Experience</h3>
+            </div>
+            <div class="space-y-10">
+              <div class="relative pl-6 border-l-2 border-slate-200/50 dark:border-slate-700/50">
+                <div class="absolute -left-[5px] top-1.5 w-2 h-2 rounded-full bg-teal-500 ring-4 ring-white/50 dark:ring-slate-800/50"></div>
+                <h4 class="font-bold text-slate-900 dark:text-white">roadmap.sh</h4>
+                <p class="mt-2 text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Solved all the frontend projects and contributed to curriculum development.</p>
+                <a class="inline-flex items-center mt-3 text-indigo-600 dark:text-indigo-400 text-xs font-semibold hover:underline" href="#">
+                  Visit Profile
+                  <span class="material-symbols-outlined text-[14px] ml-1">arrow_forward</span>
+                </a>
+              </div>
+              <div class="relative pl-6 border-l-2 border-slate-200/50 dark:border-slate-700/50">
+                <div class="absolute -left-[5px] top-1.5 w-2 h-2 rounded-full bg-teal-500 ring-4 ring-white/50 dark:ring-slate-800/50"></div>
+                <h4 class="font-bold text-slate-900 dark:text-white">roadmap.sh</h4>
+                <p class="mt-2 text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Solved all the frontend projects and contributed to curriculum development.</p>
+                <a class="inline-flex items-center mt-3 text-indigo-600 dark:text-indigo-400 text-xs font-semibold hover:underline" href="#">
+                  Visit Profile
+                  <span class="material-symbols-outlined text-[14px] ml-1">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <aside class="col-span-1 lg:col-span-4">
+          <div class="bg-white/30 dark:bg-slate-900/40 backdrop-blur-md rounded-2xl p-8 shadow-[0_8px_32px_0_rgba(31,38,135,0.07)] border border-white/20 dark:border-slate-700/30 h-full hover:shadow-lg transition-all duration-300">
+            <div class="flex items-center gap-2 mb-6 text-slate-900 dark:text-white">
+              <span class="material-symbols-outlined text-orange-500">school</span>
+              <h3 class="text-lg font-bold">Education</h3>
+            </div>
+            <div class="mb-8 bg-amber-50/50 dark:bg-amber-900/10 p-4 rounded-xl border border-amber-100/50 dark:border-amber-900/20 backdrop-blur-sm">
+              <p class="text-sm text-amber-900 dark:text-amber-100 leading-relaxed">Graduated with <span class="font-bold">3.76 CGPA</span>. Won Acme Hackathon. Organized 30 sessions.</p>
+            </div>
+            <h4 class="font-semibold text-sm mb-4 text-slate-900 dark:text-white">Courses I took:</h4>
+            <ul class="text-sm space-y-2 text-slate-600 dark:text-slate-400">
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 bg-slate-300 dark:bg-slate-600 rounded-full"></span>
+                Object Oriented Programming
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+
+      <section class="mt-12 py-8">
+        <h3 class="text-2xl font-bold mb-8 text-center md:text-left text-slate-900 dark:text-white">Reviews from my Teachers</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-white/30 dark:bg-slate-900/40 backdrop-blur-md p-8 rounded-2xl shadow-[0_8px_32px_0_rgba(31,38,135,0.07)] border border-white/20 dark:border-slate-700/30 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between h-full min-h-[200px]">
+            <div>
+              <span class="material-symbols-outlined text-slate-300 dark:text-slate-600 text-4xl mb-4">format_quote</span>
+              <p class="text-slate-700 dark:text-slate-300 mb-6 font-medium leading-relaxed">"John doe was a brilliant student; always stood out with his assignments."</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-slate-100/50 dark:bg-slate-800/50 flex items-center justify-center text-slate-500 font-bold text-xs backdrop-blur-sm">JD</div>
+              <div>
+                <p class="font-bold text-slate-900 dark:text-white text-sm">Jane Doe</p>
+                <p class="text-slate-400 text-xs">Assistant Professor</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white/30 dark:bg-slate-900/40 backdrop-blur-md p-8 rounded-2xl shadow-[0_8px_32px_0_rgba(31,38,135,0.07)] border border-white/20 dark:border-slate-700/30 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between h-full min-h-[200px]">
+            <div>
+              <span class="material-symbols-outlined text-slate-300 dark:text-slate-600 text-4xl mb-4">format_quote</span>
+              <p class="text-slate-700 dark:text-slate-300 mb-6 font-medium leading-relaxed">"John doe was a brilliant student; always stood out with his assignments."</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-slate-100/50 dark:bg-slate-800/50 flex items-center justify-center text-slate-500 font-bold text-xs backdrop-blur-sm">JD</div>
+              <div>
+                <p class="font-bold text-slate-900 dark:text-white text-sm">Jane Doe</p>
+                <p class="text-slate-400 text-xs">Assistant Professor</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white/30 dark:bg-slate-900/40 backdrop-blur-md p-8 rounded-2xl shadow-[0_8px_32px_0_rgba(31,38,135,0.07)] border border-white/20 dark:border-slate-700/30 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between h-full min-h-[200px]">
+            <div>
+              <span class="material-symbols-outlined text-slate-300 dark:text-slate-600 text-4xl mb-4">format_quote</span>
+              <p class="text-slate-700 dark:text-slate-300 mb-6 font-medium leading-relaxed">"John doe was a brilliant student; always stood out with his assignments."</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-slate-100/50 dark:bg-slate-800/50 flex items-center justify-center text-slate-500 font-bold text-xs backdrop-blur-sm">JD</div>
+              <div>
+                <p class="font-bold text-slate-900 dark:text-white text-sm">Jane Doe</p>
+                <p class="text-slate-400 text-xs">Assistant Professor</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="w-full max-w-7xl mx-auto p-8 text-center border-t-0">
+      <p class="text-slate-500 dark:text-slate-400 text-sm">
+        &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        Made with ❤️ by Rifky Nurfaishal - Basic Html Website
+      </p>
+    </footer>
+  </body>
+</html>

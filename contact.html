@@ -1,0 +1,165 @@
+<!doctype html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Contact Me</title>
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="js/script.js"></script>
+  </head>
+
+  <body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-200 font-sans min-h-screen flex flex-col transition-colors duration-300 relative overflow-x-hidden">
+    <div class="fixed top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
+      <div class="absolute -top-[10%] -left-[10%] w-[40%] h-[40%] bg-indigo-500/10 dark:bg-indigo-500/20 rounded-full blur-3xl opacity-50"></div>
+      <div class="absolute top-[20%] right-[10%] w-[30%] h-[30%] bg-purple-500/10 dark:bg-purple-500/20 rounded-full blur-3xl opacity-50"></div>
+      <div class="absolute bottom-[10%] left-[20%] w-[35%] h-[35%] bg-teal-500/10 dark:bg-teal-500/20 rounded-full blur-3xl opacity-50"></div>
+    </div>
+
+    <header class="sticky top-0 z-50 w-full backdrop-blur-md bg-white/70 dark:bg-slate-900/60 border-b border-white/20 dark:border-slate-800/50 transition-all duration-300">
+      <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 bg-indigo-600 dark:bg-indigo-500 rounded-xl flex items-center justify-center shadow-lg shadow-indigo-500/20">
+            <span class="material-symbols-outlined text-white">code</span>
+          </div>
+          <a class="text-xl font-bold tracking-tight text-slate-900 dark:text-white hover:opacity-80 transition-opacity" href="index.html">John Doe</a>
+        </div>
+        <div class="flex items-center gap-6">
+          <nav class="hidden md:block">
+            <ul class="flex gap-8 text-sm font-medium text-slate-600 dark:text-slate-300">
+              <li>
+                <a class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" href="index.html">Home</a>
+              </li>
+              <li>
+                <a class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" href="projects.html">Projects</a>
+              </li>
+              <li>
+                <a class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" href="articles.html">Articles</a>
+              </li>
+              <li>
+                <a class="text-indigo-600 dark:text-indigo-400 font-semibold" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <button aria-label="Toggle Dark Mode" class="group p-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500" onclick="toggleTheme()">
+            <span class="material-symbols-outlined block dark:hidden group-hover:text-orange-500 transition-colors">light_mode</span>
+            <span class="material-symbols-outlined hidden dark:block group-hover:text-yellow-400 transition-colors">dark_mode</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="flex-grow w-full max-w-7xl mx-auto px-6 py-12 flex flex-col justify-center items-center min-h-[calc(100vh-80px-88px)]">
+      <div class="w-full max-w-4xl">
+        <div class="text-center mb-12">
+          <h1 class="text-4xl md:text-5xl font-bold mb-4 text-slate-900 dark:text-white tracking-tight">Get in Touch</h1>
+          <p class="text-slate-500 dark:text-slate-400 text-lg max-w-2xl mx-auto">Have a project in mind or want to collaborate? Feel free to send me a message. I'm currently open to new opportunities.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="md:col-span-1 space-y-6">
+            <div class="backdrop-blur-md bg-white/60 dark:bg-slate-900/40 border border-white/50 dark:border-slate-700/50 p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
+              <div class="w-10 h-10 bg-indigo-100 dark:bg-indigo-500/20 rounded-lg flex items-center justify-center mb-4 text-indigo-600 dark:text-indigo-400">
+                <span class="material-symbols-outlined">mail</span>
+              </div>
+              <h3 class="font-semibold text-slate-900 dark:text-white mb-1">Email</h3>
+              <p class="text-slate-500 dark:text-slate-400 text-sm break-all">hello@yourname.dev</p>
+            </div>
+
+            <div class="backdrop-blur-md bg-white/60 dark:bg-slate-900/40 border border-white/50 dark:border-slate-700/50 p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
+              <div class="w-10 h-10 bg-teal-100 dark:bg-teal-500/20 rounded-lg flex items-center justify-center mb-4 text-teal-600 dark:text-teal-400">
+                <span class="material-symbols-outlined">location_on</span>
+              </div>
+              <h3 class="font-semibold text-slate-900 dark:text-white mb-1">Location</h3>
+              <p class="text-slate-500 dark:text-slate-400 text-sm">San Francisco, CA</p>
+            </div>
+
+            <div class="backdrop-blur-md bg-white/60 dark:bg-slate-900/40 border border-white/50 dark:border-slate-700/50 p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
+              <div class="w-10 h-10 bg-purple-100 dark:bg-purple-500/20 rounded-lg flex items-center justify-center mb-4 text-purple-600 dark:text-purple-400">
+                <span class="material-symbols-outlined">share</span>
+              </div>
+              <h3 class="font-semibold text-slate-900 dark:text-white mb-3">Socials</h3>
+              <div class="flex gap-3">
+                <a class="w-8 h-8 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:bg-indigo-600 hover:text-white dark:hover:bg-indigo-500 transition-colors" href="#">
+                  <span class="material-symbols-outlined text-[18px]">code</span>
+                </a>
+                <a class="w-8 h-8 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-500 transition-colors" href="#">
+                  <span class="material-symbols-outlined text-[18px]">work</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="md:col-span-2">
+            <div class="h-full backdrop-blur-xl bg-white/50 dark:bg-slate-900/50 border border-white/60 dark:border-slate-700/50 p-8 rounded-3xl shadow-xl shadow-indigo-500/5 dark:shadow-black/20">
+              <form action="#" class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div class="space-y-2">
+                    <label class="block text-sm font-medium text-slate-700 dark:text-slate-300" for="name">Name</label>
+                    <input
+                      class="w-full px-4 py-3 rounded-xl bg-slate-50/50 dark:bg-slate-800/50 border-0 ring-1 ring-slate-200 dark:ring-slate-700 focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 placeholder-slate-400 dark:placeholder-slate-500 text-slate-900 dark:text-white transition-all duration-200 backdrop-blur-sm"
+                      id="name"
+                      name="name"
+                      placeholder="John Doe"
+                      type="text" />
+                  </div>
+                  <div class="space-y-2">
+                    <label class="block text-sm font-medium text-slate-700 dark:text-slate-300" for="email">Email</label>
+                    <input
+                      class="w-full px-4 py-3 rounded-xl bg-slate-50/50 dark:bg-slate-800/50 border-0 ring-1 ring-slate-200 dark:ring-slate-700 focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 placeholder-slate-400 dark:placeholder-slate-500 text-slate-900 dark:text-white transition-all duration-200 backdrop-blur-sm"
+                      id="email"
+                      name="email"
+                      placeholder="john@example.com"
+                      type="email" />
+                  </div>
+                </div>
+                <div class="space-y-2">
+                  <label class="block text-sm font-medium text-slate-700 dark:text-slate-300" for="subject">Subject</label>
+                  <input
+                    class="w-full px-4 py-3 rounded-xl bg-slate-50/50 dark:bg-slate-800/50 border-0 ring-1 ring-slate-200 dark:ring-slate-700 focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 placeholder-slate-400 dark:placeholder-slate-500 text-slate-900 dark:text-white transition-all duration-200 backdrop-blur-sm"
+                    id="subject"
+                    name="subject"
+                    placeholder="Project collaboration"
+                    type="text" />
+                </div>
+                <div class="space-y-2">
+                  <label class="block text-sm font-medium text-slate-700 dark:text-slate-300" for="message">Message</label>
+                  <textarea
+                    class="w-full px-4 py-3 rounded-xl bg-slate-50/50 dark:bg-slate-800/50 border-0 ring-1 ring-slate-200 dark:ring-slate-700 focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 placeholder-slate-400 dark:placeholder-slate-500 text-slate-900 dark:text-white resize-none transition-all duration-200 backdrop-blur-sm"
+                    id="message"
+                    name="message"
+                    placeholder="Tell me about your project..."
+                    rows="5"></textarea>
+                </div>
+                <div class="pt-2">
+                  <button
+                    class="w-full sm:w-auto px-8 py-3 bg-indigo-600 hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600 text-white font-medium rounded-xl shadow-lg shadow-indigo-500/30 transition-all duration-200 transform hover:-translate-y-0.5 flex items-center justify-center gap-2 group"
+                    type="button">
+                    Send Message
+                    <span class="material-symbols-outlined text-[20px] group-hover:translate-x-1 transition-transform">send</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="w-full max-w-7xl mx-auto p-8 text-center border-t border-slate-200 dark:border-slate-800 mt-auto">
+      <p class="text-slate-500 dark:text-slate-400 text-sm">
+        &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        Made with ❤️ by Rifky Nurfaishal - Basic Html Website
+      </p>
+    </footer>
+  </body>
+</html>
