@@ -56,13 +56,13 @@ A multi-page personal portfolio website built with semantic HTML, Tailwind CSS, 
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/YOUR_USERNAME/your-repo-name.git
+   git clone https://github.com/rifkynf1/basic-html-website.git
    ```
 
 2. Navigate to the project folder:
 
    ```bash
-   cd your-repo-name
+   cd basic-html-website
    ```
 
 3. Open `index.html` in your browser (double-click), or use a local server (optional).
@@ -74,4 +74,4 @@ If you use VS Code, install **Live Server** extension, then right click `index.h
 ## 🔗 Project Link
 
 - Challenge: [https://roadmap.sh/projects/basic-html-website](https://roadmap.sh/projects/basic-html-website)
-- Demo/Repo: [https://github.com/YOUR_USERNAME/your-repo-name](https://github.com/YOUR_USERNAME/your-repo-name)
+- Demo/Repo: [https://github.com/rifkynf1/basic-html-website](https://github.com/rifkynf1/basic-html-website)
