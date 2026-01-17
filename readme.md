@@ -11,15 +11,15 @@ A multi-page personal portfolio website built with semantic HTML, Tailwind CSS, 
 ### 🏠 Home Page & 📂 Projects
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/180f1ba0-9c44-42c4-8836-bda42956163b" width="45%" alt="Home Page">
-  <img src="https://github.com/user-attachments/assets/4f6ca29b-7999-4b38-85f6-56897ad55ed9" width="45%" alt="Projects Page">
+  <img src="assets/home.png" width="45%" alt="Home Page">
+  <img src="assets/project.png" width="45%" alt="Projects Page">
 </p>
 
 ### 📝 Articles & 📬 Contact
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/56d414d3-84c2-4009-a98a-328dc1046fd2" width="45%" alt="Articles Page">
-  <img src="https://github.com/user-attachments/assets/8e6c970c-bb62-40ab-8510-f3c7aadcf2ec" width="45%" alt="Contact Page">
+  <img src="assets/article.png" width="45%" alt="Articles Page">
+  <img src="assets/contact.png" width="45%" alt="Contact Page">
 </p>
 
 ## 🚀 Features
